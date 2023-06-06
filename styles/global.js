@@ -21,10 +21,25 @@ module.exports = StyleSheet.create({
     hCenter: {
         justifyContent: 'center'
     },
-    hEnd:{
-        justifyContent:'flex-end'
+    hEnd: {
+        justifyContent: 'flex-end'
     },
-    textCenter:{
-        textAlign:'center'
+    textCenter: {
+        textAlign: 'center'
+    },
+    btnStyle: {
+        width: '22%',
+        height: 70,
+        textAlign: 'center',
+        verticalAlign: 'middle',
+        backgroundColor: '#1A1A1A',
+        borderRadius: 12,
+        color: '#FFFFFF',
+        fontSize: 32,
+        lineHeight: 38,
+        fontFamily: 700,
+        fontFamily: 'roboto',
+        marginTop: 15,
+        fontWeight:'bold'
     }
 })

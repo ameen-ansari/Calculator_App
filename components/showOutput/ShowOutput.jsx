@@ -7,7 +7,7 @@ function ShowOutput() {
     <View
       style={[
         globalStyles.row,
-        {justifyContent: 'flex-end', alignItems: 'center', marginTop: 134},
+        {justifyContent: 'flex-end', alignItems: 'center', marginTop: 100},
       ]}>
       <Text
         style={[
