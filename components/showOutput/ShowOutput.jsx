@@ -1,8 +1,10 @@
-import {View, Text, Image, TouchableOpacity} from 'react-native';
+import {View, Text, Image, TouchableOpacity ,Alert} from 'react-native';
 import React from 'react';
 import globalStyles from '../../styles/global';
+import {useSelector} from 'react-redux';
 
 function ShowOutput() {
+  const store = useSelector(store => store.reducers);
   return (
     <View
       style={[
@@ -15,9 +17,9 @@ function ShowOutput() {
           globalStyles.bold,
           {fontSize: 68, marginRight: 44},
         ]}>
-        24
+        {store.value.output}
       </Text>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=>{Alert.alert('coming soon')}}>
         <Image
           style={{marginRight: 14}}
           source={require('../../images/more.png')}
